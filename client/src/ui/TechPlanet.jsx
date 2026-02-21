@@ -32,7 +32,7 @@ const TechPlanet = () => {
           <div className="absolute w-28 h-28 rounded-full bg-gradient-to-br from-cyan-500 via-indigo-600 to-purple-700 blur-2xl opacity-40"></div>
 
           <div className="relative w-24 h-24 rounded-full bg-black border border-white/10 flex items-center justify-center text-white font-semibold shadow-2xl">
-            Hey
+            Hey 😄
           </div>
         </div>
 

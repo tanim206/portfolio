@@ -8,20 +8,12 @@ import { GiFlatStar } from "react-icons/gi";
 const Contact = () => {
   return (
     <div className="max-w-5xl mt-30 pb-8 mb-10 text-white mx-auto px-6 sm:px-8">
-      <div className="flex flex-col items-center gap-6 text-center sm:text-left">
+      <div className="flex  items-center gap-6 text-center sm:text-left">
         <p className="rounded-full flex justify-center items-center gap-3 border py-1 px-6 sm:px-10 border-[#0b4357] bg-[#0e2638] text-[#64e2f5]">
           <span>
             <GiFlatStar />
           </span>
           <span> Get In Touch</span>
-        </p>
-        <h1 className="text-3xl sm:text-5xl font-bold text-[#64e2f5]">
-          Let's Work Together
-        </h1>
-        <p className="text-md sm:text-xl text-[#878f9c] text-center">
-          Have a project in mind or want to discuss potential opportunities? I'm
-          always open <br className="hidden sm:block" /> to new challenges and
-          collaborations.
         </p>
       </div>
 
@@ -29,12 +21,11 @@ const Contact = () => {
       <div className="mt-10 flex flex-col lg:flex-row justify-between items-start gap-8">
         {/* left info */}
         <div className="w-full lg:w-1/2">
-         
           {/* info list */}
           <div className="space-y-5">
             {/* Email */}
-            <div className="border border-[#303a4d] p-4 rounded-xl flex gap-4 bg-[#142130]">
-              <span className="text-[#c083fc] border border-white rounded-xl text-3xl p-3">
+            <div className="border border-[#303a4d] p-4 rounded-xl flex gap-4 bg-transparent backdrop-blur-md">
+              <span className="text-[#c083fc]  rounded-xl text-3xl p-3">
                 <MdOutlineMailOutline />
               </span>
               <p className="flex flex-col space-y-1">
@@ -44,8 +35,8 @@ const Contact = () => {
             </div>
 
             {/* Location */}
-            <div className="border border-[#303a4d] p-4 rounded-xl flex gap-4 bg-[#142130]">
-              <span className="text-[#5fa5fa] border border-white rounded-xl text-3xl p-3">
+            <div className="border border-[#303a4d] p-4 rounded-xl flex gap-4 bg-transparent backdrop-blur-md">
+              <span className="text-[#5fa5fa]  rounded-xl text-3xl p-3">
                 <SlLocationPin />
               </span>
               <p className="flex flex-col space-y-1">
@@ -57,8 +48,8 @@ const Contact = () => {
             </div>
 
             {/* Phone */}
-            <div className="border border-[#303a4d] p-4 rounded-xl flex gap-4 bg-[#142130]">
-              <span className="text-[#49de80] border border-white rounded-xl text-3xl p-3">
+            <div className="border border-[#303a4d] p-4 rounded-xl flex gap-4 bg-transparent backdrop-blur-md">
+              <span className="text-[#49de80]  rounded-xl text-3xl p-3">
                 <PiPhoneCallLight />
               </span>
               <p className="flex flex-col space-y-1">
@@ -68,8 +59,8 @@ const Contact = () => {
             </div>
 
             {/* Response Time */}
-            <div className="border border-[#303a4d] p-4 rounded-xl flex gap-4 bg-[#142130]">
-              <span className="text-[#f7bc25] border border-white rounded-xl text-3xl p-3">
+            <div className="border border-[#303a4d] p-4 rounded-xl flex gap-4 bg-transparent backdrop-blur-md">
+              <span className="text-[#f7bc25]  rounded-xl text-3xl p-3">
                 <FaRegClock />
               </span>
               <p className="flex flex-col space-y-1">
@@ -81,7 +72,7 @@ const Contact = () => {
             </div>
 
             {/* Quick Response */}
-            <div className="border border-[#303a4d] p-4 rounded-xl flex gap-4 bg-[#142130]">
+            <div className="border border-[#303a4d] p-4 rounded-xl flex gap-4 bg-transparent backdrop-blur-md">
               <p className="space-y-1">
                 <p className="flex items-center gap-3">
                   <span className="text-[#f7bc25] text-2xl">
@@ -100,28 +91,30 @@ const Contact = () => {
         </div>
 
         {/* right form */}
-        <div className="w-full lg:w-1/2 bg-[#0e2638] p-6 rounded-2xl border border-[#303a4d] shadow-lg">
-          <h2 className="text-2xl font-semibold text-[#64e2f5] mb-6">Contact Form</h2>
+        <div className="w-full lg:w-1/2 bg-transparent backdrop-blur-md p-6 rounded-2xl border border-[#303a4d] shadow-lg">
+          <h2 className="text-2xl font-semibold text-[#64e2f5] mb-6">
+            Contact Form
+          </h2>
           <form className="flex flex-col gap-4">
             <input
               type="text"
               placeholder="Your Name"
-              className="p-3 rounded-lg bg-[#142130] border border-[#303a4d] text-white focus:outline-none focus:ring-2 focus:ring-cyan-500"
+              className="p-3 rounded-lg bg-transparent backdrop-blur-md border border-[#303a4d] text-white focus:outline-none focus:ring-2 focus:ring-cyan-500"
             />
             <input
               type="email"
               placeholder="Your Email"
-              className="p-3 rounded-lg bg-[#142130] border border-[#303a4d] text-white focus:outline-none focus:ring-2 focus:ring-cyan-500"
+              className="p-3 rounded-lg bg-transparent backdrop-blur-md border border-[#303a4d] text-white focus:outline-none focus:ring-2 focus:ring-cyan-500"
             />
             <input
               type="text"
               placeholder="Subject"
-              className="p-3 rounded-lg bg-[#142130] border border-[#303a4d] text-white focus:outline-none focus:ring-2 focus:ring-cyan-500"
+              className="p-3 rounded-lg bg-transparent backdrop-blur-md border border-[#303a4d] text-white focus:outline-none focus:ring-2 focus:ring-cyan-500"
             />
             <textarea
               placeholder="Message"
               rows={5}
-              className="p-3 rounded-lg bg-[#142130] border border-[#303a4d] text-white focus:outline-none focus:ring-2 focus:ring-cyan-500 resize-none"
+              className="p-3 rounded-lg bg-transparent backdrop-blur-md border border-[#303a4d] text-white focus:outline-none focus:ring-2 focus:ring-cyan-500 resize-none"
             ></textarea>
             <button
               type="submit"

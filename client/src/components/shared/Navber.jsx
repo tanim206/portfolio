@@ -20,8 +20,7 @@ const Navbar = () => {
           px-3 md:px-6 py-2 md:py-3
           gap-2 md:gap-4
           rounded-full
-          backdrop-blur-3xl
-          bg-white/10
+         bg-transparent backdrop-blur-md
           border border-white/20
           shadow-[0_8px_32px_rgba(0,0,0,0.37)]
         "

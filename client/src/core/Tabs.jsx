@@ -55,10 +55,7 @@ const Tabs = () => {
   return (
     <div className="flex items-center justify-center p-6 md:p-0">
       <div className="w-full max-w-5xl rounded-3xl md:p-0 p-8">
-        {/* Header */}
-        <div className="flex justify-between items-center mb-10 flex-wrap gap-4">
-          <h1 className="text-3xl font-bold text-white">Experience...</h1>
-        </div>
+        
 
         {/* ================= TABS ================= */}
         <div className="flex  justify-center items-center gap-3 mb-10">
@@ -85,7 +82,7 @@ const Tabs = () => {
             {projects.map((project, i) => (
               <div
                 key={i}
-                className="group relative rounded-2xl overflow-hidden bg-[#0f172a] border border-white/10 transition-all duration-500 hover:-translate-y-3 "
+                className="group relative rounded-2xl overflow-hidden bg-transparent backdrop-blur-md border border-white/10 transition-all duration-500 hover:-translate-y-3 "
               >
                 <div className="overflow-hidden">
                   <img
