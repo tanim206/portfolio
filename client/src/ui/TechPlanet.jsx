@@ -25,14 +25,14 @@ const TechPlanet = () => {
 
   return (
     <section className="flex items-center justify-center">
-      <div className="relative w-[380px] h-[380px]">
+      <div className="relative w-60 h-60"> {/* smaller size */}
 
         {/* 🌍 Center Planet */}
         <div className="absolute inset-0 flex items-center justify-center">
-          <div className="absolute w-44 h-44 rounded-full bg-gradient-to-br from-cyan-500 via-indigo-600 to-purple-700 blur-2xl opacity-40"></div>
+          <div className="absolute w-28 h-28 rounded-full bg-gradient-to-br from-cyan-500 via-indigo-600 to-purple-700 blur-2xl opacity-40"></div>
 
-          <div className="relative w-36 h-36 rounded-full bg-black border border-white/10 flex items-center justify-center text-white font-semibold shadow-2xl">
-          Hey
+          <div className="relative w-24 h-24 rounded-full bg-black border border-white/10 flex items-center justify-center text-white font-semibold shadow-2xl">
+            Hey
           </div>
         </div>
 
@@ -50,12 +50,12 @@ const TechPlanet = () => {
                 style={{
                   transform: `
                     rotate(${angle}deg)
-                    translate(160px)
+                    translate(120px) /* smaller orbit */
                     rotate(-${angle}deg)
                   `,
                 }}
               >
-                <div className="w-14 h-14 rounded-full bg-black/60 backdrop-blur-xl border border-white/10 flex items-center justify-center text-2xl shadow-xl hover:scale-110 transition">
+                <div className="w-10 h-10 rounded-full bg-black/60 backdrop-blur-xl border border-white/10 flex items-center justify-center text-xl shadow-xl hover:scale-110 transition">
                   {tech.icon}
                 </div>
               </div>

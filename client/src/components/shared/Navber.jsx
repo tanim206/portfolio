@@ -12,7 +12,7 @@ const navItems = [
 
 const Navbar = () => {
   return (
-    <nav className="fixed top-4 md:top-6 flex items-center gap-2 md:gap-4 left-1/2 -translate-x-1/2 z-50 w-[95%] md:w-auto">
+    <nav className="fixed flex justify-center  top-4 md:top-6  items-center gap-2 md:gap-4 left-1/2 -translate-x-1/2 z-50 w-[95%] md:w-auto">
       
       <div
         className="
@@ -57,12 +57,12 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Search Button */}
+      {/* Search Button
       <div className="flex flex-col items-center ml-2 md:ml-4">
         <div className="p-5 rounded-full bg-white/10 hover:bg-white/20 backdrop-blur-3xl shadow-lg transition cursor-pointer">
           <FiSearch className="text-white text-lg md:text-2xl" />
         </div>
-      </div>
+      </div> */}
 
     </nav>
   );

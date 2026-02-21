@@ -3,9 +3,9 @@ import TechPlanet from "../../ui/TechPlanet";
 
 const HeroSection = () => {
   return (
-    <main className="mt-30 flex max-w-6xl mx-auto px-4">
+    <main className="flex max-w-6xl mx-auto px-4">
       <div className="w-full rounded-3xl  p-8 md:p-12">
-        <div className="flex flex-col lg:flex-row items-center gap-12">
+        <div className="flex flex-col lg:flex-row items-center gap-14">
           {/* Left Content */}
           <div className="flex flex-col text-center lg:text-left gap-6 flex-1">
             <div>
@@ -36,11 +36,12 @@ const HeroSection = () => {
 
             {/* Buttons */}
             <div className="flex flex-wrap justify-center lg:justify-start gap-4">
-              <button className="px-6 py-2 rounded-xl bg-cyan-500 text-white shadow-lg hover:shadow-cyan-500/40 hover:scale-105 transition">
-                View Projects
+            
+              <button className="px-6 py-2 rounded-xl border border-white/20 text-white hover:bg-white/10 transition">
+                Get in touch
               </button>
               <button className="px-6 py-2 rounded-xl border border-white/20 text-white hover:bg-white/10 transition">
-                Download CV
+                 View Projects
               </button>
             </div>
 
