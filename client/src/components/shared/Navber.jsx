@@ -1,6 +1,13 @@
 "use client";
 import { NavLink } from "react-router-dom";
-import { FiHome, FiUser, FiCode, FiMail, FiBriefcase, FiSearch } from "react-icons/fi";
+import {
+  FiHome,
+  FiUser,
+  FiCode,
+  FiMail,
+  FiBriefcase,
+  FiSearch,
+} from "react-icons/fi";
 
 const navItems = [
   { id: 1, name: "Home", icon: FiHome, path: "/" },
@@ -13,18 +20,16 @@ const navItems = [
 const Navbar = () => {
   return (
     <nav className="fixed flex justify-center  top-4 md:top-6  items-center gap-2 md:gap-4 left-1/2 -translate-x-1/2 z-50 w-[95%] md:w-auto">
-      
       <div
         className="
-          flex items-center justify-between
-          px-3 md:px-6 py-2 md:py-3
-          gap-2 md:gap-4
-          rounded-full
-
-         bg-white backdrop-blur-md
-          border border-black/20
-         shadow-sm
-        "
+    flex items-center justify-between
+    px-3 md:px-6 py-2 md:py-3
+    gap-2 md:gap-4
+    rounded-full
+    bg-white/0 backdrop-blur-md
+    border border-black/20
+    shadow-sm
+  "
       >
         <div className="flex items-center gap-2 md:gap-4">
           {navItems.map((item) => {
@@ -43,7 +48,7 @@ const Navbar = () => {
                   transition-all duration-300
                   ${
                     isActive
-                      ? "bg-black/20 text-black font-semibold scale-105 font-bold"
+                      ? "bg-black/5 text-black font-bold scale-105"
                       : "text-black font-semibold hover:bg-white/10 hover:scale-105"
                   }
                 `
@@ -63,7 +68,6 @@ const Navbar = () => {
           <FiSearch className="text-white text-lg md:text-2xl" />
         </div>
       </div> */}
-
     </nav>
   );
 };

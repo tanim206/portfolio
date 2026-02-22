@@ -3,9 +3,8 @@ import React from "react";
 
 const Journey = () => {
   return (
-    <section className="w-full py-16">
-      <div className="max-w-5xl mx-auto px-4 space-y-12">
-
+    <section className="w-full py-12 px-2 md:px-0">
+      <div className="max-w-5xl border rounded-3xl border-slate-200 bg-slate-50 py-4 mx-auto px-4 space-y-12">
         {/* Heading */}
         <div className="flex items-center gap-3 ">
           <Map size={20} />
@@ -14,30 +13,28 @@ const Journey = () => {
 
         {/* Timeline */}
         <div className="relative space-y-6 border-l-2 border-white/50 pl-6">
-
           <p className=" leading-relaxed">
-            <span className="font-semibold ">2021 —</span>{" "}
-            Started as a web designer, mastering HTML, CSS, JavaScript, and Bootstrap.
+            <span className="font-semibold ">2021 —</span> Started as a web
+            designer, mastering HTML, CSS, JavaScript, and Bootstrap.
           </p>
 
           <p className=" leading-relaxed">
-            <span className="font-semibold ">2022 —</span>{" "}
-            Began freelancing and transitioned into frontend development with React,
-            Next.js, and Tailwind CSS.
+            <span className="font-semibold ">2022 —</span> Began freelancing and
+            transitioned into frontend development with React, Next.js, and
+            Tailwind CSS.
           </p>
 
           <p className=" leading-relaxed">
-            <span className="font-semibold ">2023 —</span>{" "}
-            Worked as a freelance email signature developer and explored backend
-            technologies like Node.js and MongoDB.
+            <span className="font-semibold ">2023 —</span> Worked as a freelance
+            email signature developer and explored backend technologies like
+            Node.js and MongoDB.
           </p>
 
           <p className=" leading-relaxed">
-            <span className="font-semibold ">2024–2025 —</span>{" "}
-            Joined HypoMatrix LTD and grew into a Senior Software Engineer while
+            <span className="font-semibold ">2024–2025 —</span> Joined
+            HypoMatrix LTD and grew into a Senior Software Engineer while
             continuously learning.
           </p>
-
         </div>
       </div>
     </section>

@@ -5,7 +5,7 @@ import Auth from "./stacks/Auth";
 
 const Stacks = () => {
   return (
-    <div className="mt-30 max-w-5xl mb-12 mx-auto space-y-5">
+    <div className="mt-30 max-w-5xl mb-12 mx-auto space-y-8">
       <Frontend />
       <Backend />
       <Database />

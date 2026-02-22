@@ -1,13 +1,13 @@
 import { Lock, FileText, Code2, QrCode, Palette, Ruler } from "lucide-react";
 
-const Projects = () => {
+const Experience = () => {
   return (
     <section className="bg-white mb-16 mt-30">
       <div className="max-w-5xl mx-auto px-4 md:px-0">
         {/* Section Title */}
         <div className="text-center mb-12">
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            My Projects
+            My Experience
           </h1>
           <p className="text-gray-600 text-lg max-w-2xl mx-auto">
             A showcase of my latest work including tools, generators, and
@@ -116,4 +116,4 @@ const Projects = () => {
   );
 };
 
-export default Projects;
+export default Experience;
