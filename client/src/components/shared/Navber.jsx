@@ -5,9 +5,9 @@ import { FiHome, FiUser, FiCode, FiMail, FiBriefcase, FiSearch } from "react-ico
 const navItems = [
   { id: 1, name: "Home", icon: FiHome, path: "/" },
   { id: 2, name: "About", icon: FiUser, path: "/about" },
-  { id: 3, name: "Projects", icon: FiCode, path: "/projects" },
+  { id: 3, name: "Stacks", icon: FiCode, path: "/stacks" },
   { id: 4, name: "Contact", icon: FiMail, path: "/contact" },
-  { id: 5, name: "Experience", icon: FiBriefcase, path: "/experience" },
+  { id: 5, name: "projects", icon: FiBriefcase, path: "/projects" },
 ];
 
 const Navbar = () => {
@@ -20,9 +20,10 @@ const Navbar = () => {
           px-3 md:px-6 py-2 md:py-3
           gap-2 md:gap-4
           rounded-full
-         bg-transparent backdrop-blur-md
-          border border-white/20
-          shadow-[0_8px_32px_rgba(0,0,0,0.37)]
+
+         bg-white backdrop-blur-md
+          border border-black/20
+         shadow-sm
         "
       >
         <div className="flex items-center gap-2 md:gap-4">
@@ -42,8 +43,8 @@ const Navbar = () => {
                   transition-all duration-300
                   ${
                     isActive
-                      ? "bg-white/20 font-semibold scale-105 font-bold"
-                      : "text-white hover:bg-white/10 hover:scale-105"
+                      ? "bg-black/20 text-black font-semibold scale-105 font-bold"
+                      : "text-black font-semibold hover:bg-white/10 hover:scale-105"
                   }
                 `
                 }

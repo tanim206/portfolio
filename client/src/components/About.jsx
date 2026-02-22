@@ -1,17 +1,18 @@
 import AvailableBadge from "./About/AvailableBadge ";
-import HeroSectiom from "./About/HeroSection";
-import IntroSection from "./About/IntroSection ";
-import ProjectsSection from "./About/ProjectSection";
+import Educaion from "./About/Educaion";
+import Introduction from "./About/Introduction";
+import Journey from "./About/Journey";
 import ServiceSection from "./About/ServiceSection";
 
 const About = () => {
   return (
-    <div className="max-w-5xl px-6  mt-30  mx-auto">
-      {/* <HeroSectiom /> */}
+    <div className="mt-30">
       <AvailableBadge />
-      <IntroSection />
-      <ProjectsSection />
-      <ServiceSection />
+      <Introduction />
+      <Journey />
+      <Educaion/>
+      {/* <ServiceSection /> */}
+    
     </div>
   );
 };

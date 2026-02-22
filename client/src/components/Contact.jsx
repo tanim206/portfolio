@@ -1,132 +1,42 @@
-import { MdOutlineMailOutline } from "react-icons/md";
-import { SlLocationPin } from "react-icons/sl";
-import { PiPhoneCallLight } from "react-icons/pi";
-import { FaRegClock } from "react-icons/fa";
-import { GoNorthStar } from "react-icons/go";
-import { GiFlatStar } from "react-icons/gi";
+import React from "react";
 
-const Contact = () => {
+const ContactForm = () => {
   return (
-    <div className="max-w-5xl mt-30 pb-8 mb-10 text-white mx-auto px-6 sm:px-8">
-      <div className="flex  items-center gap-6 text-center sm:text-left">
-        <p className="rounded-full flex justify-center items-center gap-3 border py-1 px-6 sm:px-10 border-[#0b4357] bg-[#0e2638] text-[#64e2f5]">
-          <span>
-            <GiFlatStar />
-          </span>
-          <span> Get In Touch</span>
-        </p>
-      </div>
+    <div className="max-w-5xl mx-auto my-20 p-6  rounded-2xl">
+      <h2 className="text-2xl font-bold mb-6 text-center">
+        Contact Me
+      </h2>
 
-      {/* contact start */}
-      <div className="mt-10 flex flex-col lg:flex-row justify-between items-start gap-8">
-        {/* left info */}
-        <div className="w-full lg:w-1/2">
-          {/* info list */}
-          <div className="space-y-5">
-            {/* Email */}
-            <div className="border border-[#303a4d] p-4 rounded-xl flex gap-4 bg-transparent backdrop-blur-md">
-              <span className="text-[#c083fc]  rounded-xl text-3xl p-3">
-                <MdOutlineMailOutline />
-              </span>
-              <p className="flex flex-col space-y-1">
-                <span className="font-semibold">Email</span>
-                <span className="text-[#878f9c]">mdtanim.dev@gmail.com</span>
-              </p>
-            </div>
-
-            {/* Location */}
-            <div className="border border-[#303a4d] p-4 rounded-xl flex gap-4 bg-transparent backdrop-blur-md">
-              <span className="text-[#5fa5fa]  rounded-xl text-3xl p-3">
-                <SlLocationPin />
-              </span>
-              <p className="flex flex-col space-y-1">
-                <span className="font-semibold">Location</span>
-                <span className="text-[#878f9c]">
-                  Chadnigat UP, Gujrat, Moulvibazar, Bangladesh
-                </span>
-              </p>
-            </div>
-
-            {/* Phone */}
-            <div className="border border-[#303a4d] p-4 rounded-xl flex gap-4 bg-transparent backdrop-blur-md">
-              <span className="text-[#49de80]  rounded-xl text-3xl p-3">
-                <PiPhoneCallLight />
-              </span>
-              <p className="flex flex-col space-y-1">
-                <span className="font-semibold">Phone & WhatsApp</span>
-                <span className="text-[#878f9c]">+880 1646-471206</span>
-              </p>
-            </div>
-
-            {/* Response Time */}
-            <div className="border border-[#303a4d] p-4 rounded-xl flex gap-4 bg-transparent backdrop-blur-md">
-              <span className="text-[#f7bc25]  rounded-xl text-3xl p-3">
-                <FaRegClock />
-              </span>
-              <p className="flex flex-col space-y-1">
-                <span className="font-semibold">Response Time</span>
-                <span className="text-[#878f9c]">
-                  Typically within 24 hours
-                </span>
-              </p>
-            </div>
-
-            {/* Quick Response */}
-            <div className="border border-[#303a4d] p-4 rounded-xl flex gap-4 bg-transparent backdrop-blur-md">
-              <p className="space-y-1">
-                <p className="flex items-center gap-3">
-                  <span className="text-[#f7bc25] text-2xl">
-                    <GoNorthStar />
-                  </span>
-                  <span className="font-semibold">Quick Response</span>
-                </p>
-                <span className="text-[#878f9c]">
-                  I prioritize all incoming messages and strive to respond
-                  within 24 hours. For urgent matters, feel free to call or
-                  WhatsApp directly.
-                </span>
-              </p>
-            </div>
-          </div>
-        </div>
-
-        {/* right form */}
-        <div className="w-full lg:w-1/2 bg-transparent backdrop-blur-md p-6 rounded-2xl border border-[#303a4d] shadow-lg">
-          <h2 className="text-2xl font-semibold text-[#64e2f5] mb-6">
-            Contact Form
-          </h2>
-          <form className="flex flex-col gap-4">
-            <input
-              type="text"
-              placeholder="Your Name"
-              className="p-3 rounded-lg bg-transparent backdrop-blur-md border border-[#303a4d] text-white focus:outline-none focus:ring-2 focus:ring-cyan-500"
-            />
-            <input
-              type="email"
-              placeholder="Your Email"
-              className="p-3 rounded-lg bg-transparent backdrop-blur-md border border-[#303a4d] text-white focus:outline-none focus:ring-2 focus:ring-cyan-500"
-            />
-            <input
-              type="text"
-              placeholder="Subject"
-              className="p-3 rounded-lg bg-transparent backdrop-blur-md border border-[#303a4d] text-white focus:outline-none focus:ring-2 focus:ring-cyan-500"
-            />
-            <textarea
-              placeholder="Message"
-              rows={5}
-              className="p-3 rounded-lg bg-transparent backdrop-blur-md border border-[#303a4d] text-white focus:outline-none focus:ring-2 focus:ring-cyan-500 resize-none"
-            ></textarea>
-            <button
-              type="submit"
-              className="bg-cyan-500 text-black font-semibold py-3 rounded-lg hover:bg-cyan-600 transition"
-            >
-              Send Message
-            </button>
-          </form>
-        </div>
-      </div>
+      <form className="flex flex-col gap-4">
+        <input
+          type="text"
+          placeholder="Your Name"
+          className="p-3 rounded-lg bg-white/10 border border-gray-700 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-white"
+        />
+        <input
+          type="email"
+          placeholder="Your Email"
+          className="p-3 rounded-lg bg-white/10 border border-gray-700 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-white"
+        />
+        <input
+          type="text"
+          placeholder="Subject"
+          className="p-3 rounded-lg bg-white/10 border border-gray-700 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-white"
+        />
+        <textarea
+          placeholder="Message"
+          rows={5}
+          className="p-3 rounded-lg bg-white/10 border border-gray-700 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-white resize-none"
+        ></textarea>
+        <button
+          type="submit"
+          className="bg-white text-black font-semibold py-3 rounded-lg hover:bg-gray-200 transition"
+        >
+          Send Message
+        </button>
+      </form>
     </div>
   );
 };
 
-export default Contact;
+export default ContactForm;

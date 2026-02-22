@@ -9,14 +9,14 @@ const GitHubActivityCard = () => {
         
         {/* Header with GitHub logo */}
         <div className="flex items-center gap-3 mb-6">
-          <FaGithub className="text-2xl text-white" />
-          <h2 className="text-2xl md:text-3xl font-bold text-white tracking-wide">
+          <FaGithub className="text-2xl" />
+          <h2 className="text-2xl md:text-3xl font-bold  tracking-wide">
             GitHub Activity —
           </h2>
         </div>
 
         {/* GitHub Contributions Iframe */}
-        <div className="overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-br from-cyan-500/10 via-blue-500/10 to-purple-500/10 backdrop-blur-xl shadow-lg p-2">
+        <div className="overflow-hidden rounded-2xl border border-black bg-white backdrop-blur-xl shadow-md p-2">
           <iframe
             src="https://ghchart.rshah.org/tanim206?full=true&bg=0d1117&color=4c1&line=ffffff"
             title="GitHub Contribution Chart"
