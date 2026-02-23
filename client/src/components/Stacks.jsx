@@ -9,7 +9,7 @@ const Stacks = () => {
       <Frontend />
       <Backend />
       <Database />
-      <Auth />
+      <Auth /> 
     </div>
   );
 };

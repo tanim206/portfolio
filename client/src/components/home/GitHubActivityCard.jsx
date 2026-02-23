@@ -11,12 +11,12 @@ const GitHubActivityCard = () => {
         <div className="flex items-center gap-3 mb-6">
           <FaGithub className="text-2xl" />
           <h2 className="text-2xl md:text-3xl font-bold  tracking-wide">
-            GitHub Activity —
+            GitHub Activity_____
           </h2>
         </div>
 
         {/* GitHub Contributions Iframe */}
-        <div className="overflow-hidden rounded-2xl border border-black bg-white backdrop-blur-xl shadow-md p-2">
+        <div className="overflow-hidden rounded-2xl border border-black/5 bg-white  shadow p-2">
           <iframe
             src="https://ghchart.rshah.org/tanim206?full=true&bg=0d1117&color=4c1&line=ffffff"
             title="GitHub Contribution Chart"

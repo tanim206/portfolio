@@ -1,20 +1,30 @@
-import { FiGithub, FiLinkedin, FiTwitter, FiMail, FiInstagram } from "react-icons/fi";
+import {
+  FiGithub,
+  FiLinkedin,
+  FiTwitter,
+  FiMail,
+  FiInstagram,
+} from "react-icons/fi";
 import React from "react";
+import { FaWhatsapp } from "react-icons/fa";
 
 const Footer = () => {
   return (
     <footer className="bg-black py-16 ">
       <div className="max-w-5xl mx-auto px-4 md:px-0">
         <div className="rounded-3xl bg-white/5 backdrop-blur border border-white/10 p-8 space-y-8">
-
           {/* Name */}
-          <div className="text-white text-2xl font-bold">
-            Muhammad Tanim
-          </div>
+          <div className="text-white text-2xl font-bold">Muhammad Tanim</div>
 
           {/* Description / Skills */}
           <p className="text-gray-400">
-            Junior Web Developer skilled in <span className="text-white font-medium">React, Next.js, Tailwind CSS, Node.js, Express.js, MongoDB</span>. Passionate about building modern, responsive, and user-friendly web applications.
+            Junior Web Developer skilled in{" "}
+            <span className="text-white font-medium">
+              React, Next.js, Tailwind CSS, Node.js, Express.js, MongoDB, Clerk,
+              Firebase
+            </span>
+            . Passionate about building modern, responsive, and user-friendly
+            web applications.
           </p>
 
           {/* Contact List */}
@@ -70,7 +80,16 @@ const Footer = () => {
                 href="https://www.instagram.com/in/hussen_md_tanim"
                 className="font-medium text-white hover:underline"
               >
-            @hussen_md_tanim
+                @hussen_md_tanim
+              </a>
+            </li>
+            <li className="flex items-center gap-2">
+              <FaWhatsapp className="text-[#26d466]" />
+              <a
+                href="https://wa.me/8801646471206"
+                className="font-medium text-white hover:underline"
+              >
+                @md_tanim206
               </a>
             </li>
           </ul>
@@ -79,7 +98,6 @@ const Footer = () => {
           <div className="border-t border-white/20 mt-8 pt-4 text-center text-gray-400 text-sm">
             © {new Date().getFullYear()} Muhammad Tanim. All rights reserved.
           </div>
-
         </div>
       </div>
     </footer>

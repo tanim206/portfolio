@@ -1,114 +1,127 @@
-import { Lock, FileText, Code2, QrCode, Palette, Ruler } from "lucide-react";
+import { FaBriefcase, FaVideo } from "react-icons/fa";
+import { PiOfficeChairBold } from "react-icons/pi";
+import {
+  SiBackendless,
+  SiFrontendmentor,
+  SiStmicroelectronics,
+  SiTaichigraphics,
+} from "react-icons/si";
 
 const Experience = () => {
   return (
-    <section className="bg-white mb-16 mt-30">
-      <div className="max-w-5xl mx-auto px-4 md:px-0">
-        {/* Section Title */}
-        <div className="text-center mb-12">
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            My Experience
-          </h1>
-          <p className="text-gray-600 text-lg max-w-2xl mx-auto">
-            A showcase of my latest work including tools, generators, and
-            utilities that I built to solve real-world problems.
+    <section id="experience" className="py-20 bg-white">
+      <div className="max-w-5xl mx-auto md:px-0">
+      
+        {/* Title */}
+        <div className=" mb-10">
+          <h2 className="text-4xl  font-bold">
+          Experience_____
+          </h2>
+          <p className="text-gray-500 mt-4 text-lg">
+            Professional journey and work history.
           </p>
+
+          
         </div>
-
-        {/* Projects Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {/* Card 1 */}
-          <div className="rounded-2xl border border-gray-200 bg-white p-6 shadow hover:shadow-lg transition">
-            <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-lg bg-red-500 text-white">
-              <Lock size={20} />
+        <div className="grid md:grid-cols-2 gap-10">
+          {/* Experience 1 */}
+          <div className=" p-8 rounded-2xl shadow border border-black/5 hover:shadow-xl transition duration-300">
+            <div className="flex items-center mb-4">
+              <div className="w-12 h-12 flex items-center justify-center bg-[#cf1d5b] text-white rounded-full mr-4">
+                <SiFrontendmentor size={18} />
+              </div>
+              <div>
+                <h3 className="text-xl font-semibold">Frontend Development</h3>
+                <p className="text-[#cf1d5b] text-sm">2021 - Present</p>
+              </div>
             </div>
-            <h3 className="text-lg font-semibold text-gray-900 mb-2">
-              Password Generator
-            </h3>
-            <p className="text-sm text-gray-600 mb-4">
-              Create strong, secure passwords with customizable options
-              including length and complexity.
-            </p>
-            <p className="text-sm font-medium text-red-500">Available Now ✓</p>
-          </div>
-
-          {/* Card 2 */}
-          <div className="rounded-2xl border border-gray-200 bg-white p-6 shadow hover:shadow-lg transition">
-            <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-lg bg-blue-500 text-white">
-              <FileText size={20} />
-            </div>
-            <h3 className="text-lg font-semibold text-gray-900 mb-2">
-              Lorem Ipsum Generator
-            </h3>
-            <p className="text-sm text-gray-600 mb-4">
-              Generate placeholder text with custom word count, paragraph length
-              and formatting.
-            </p>
-            <p className="text-sm font-medium text-blue-500">Available Now ✓</p>
-          </div>
-
-          {/* Card 3 */}
-          <div className="rounded-2xl border border-gray-200 bg-white p-6 shadow hover:shadow-lg transition">
-            <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-lg bg-green-500 text-white">
-              <Code2 size={20} />
-            </div>
-            <h3 className="text-lg font-semibold text-gray-900 mb-2">
-              JWT Decoder
-            </h3>
-            <p className="text-sm text-gray-600 mb-4">
-              Decode and analyze JSON Web Tokens with header, payload and
-              signature info.
-            </p>
-            <p className="text-sm font-medium text-green-500">
-              Available Now ✓
+            <p className="text-gray-600">
+              Teaching branding, typography, UI/UX fundamentals and mentoring
+              students to build professional portfolios with real-world
+              projects.
             </p>
           </div>
 
-          {/* Card 4 */}
-          <div className="rounded-2xl border border-gray-200 bg-white p-6 shadow hover:shadow-lg transition">
-            <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-lg bg-purple-500 text-white">
-              <QrCode size={20} />
+          {/* Experience 2 */}
+          <div className=" p-8 rounded-2xl shadow border border-black/5 hover:shadow-xl transition duration-300">
+            <div className="flex items-center mb-4">
+              <div className="w-12 h-12 flex items-center justify-center bg-[#509e42] text-white rounded-full mr-4">
+                <SiBackendless size={18} />
+              </div>
+              <div>
+                <h3 className="text-xl font-semibold">Backend Development</h3>
+                <p className="text-[#509e42] text-sm">2022 - Present</p>
+              </div>
             </div>
-            <h3 className="text-lg font-semibold text-gray-900 mb-2">
-              QR Code Generator
-            </h3>
-            <p className="text-sm text-gray-600 mb-4">
-              Generate QR codes for URLs, text, and contact information.
-            </p>
-            <p className="text-sm font-medium text-purple-500">
-              Available Now ✓
+            <p className="text-gray-600">
+              Designing marketing materials, banners, and social media creatives
+              for student counselling campaigns and branding projects.
             </p>
           </div>
 
-          {/* Card 5 */}
-          <div className="rounded-2xl border border-gray-200 bg-white p-6 shadow hover:shadow-lg transition">
-            <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-lg bg-orange-500 text-white">
-              <Palette size={20} />
+          {/* Experience 3 */}
+          <div className=" p-8 rounded-2xl shadow border border-black/5 hover:shadow-xl transition duration-300">
+            <div className="flex items-center mb-4">
+              <div className="w-12 h-12 flex items-center justify-center bg-[#d47800] text-white rounded-full mr-4">
+                <SiTaichigraphics size={18} />
+              </div>
+              <div>
+                <h3 className="text-xl font-semibold">Graphics Design</h3>
+                <p className="text-[#d47800] text-sm">2020 - Present</p>
+              </div>
             </div>
-            <h3 className="text-lg font-semibold text-gray-900 mb-2">
-              Color Palette Generator
-            </h3>
-            <p className="text-sm text-gray-600 mb-4">
-              Create beautiful color palettes with harmony rules and export
-              options.
-            </p>
-            <p className="text-sm font-medium text-orange-500">
-              Available Now ✓
+            <p className="text-gray-600">
+              Providing logo design, brand identity, and social media content
+              design services for local and international clients.
             </p>
           </div>
-
-          {/* Card 6 */}
-          <div className="rounded-2xl border border-gray-200 bg-white p-6 shadow hover:shadow-lg transition">
-            <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-lg bg-pink-500 text-white">
-              <Ruler size={20} />
+          {/* Experience 4 */}
+          <div className=" p-8 rounded-2xl shadow border border-black/5 hover:shadow-xl transition duration-300">
+            <div className="flex items-center mb-4">
+              <div className="w-12 h-12 flex items-center justify-center bg-[#d92d21] text-white rounded-full mr-4">
+                <FaVideo size={18} />
+              </div>
+              <div>
+                <h3 className="text-xl font-semibold">Motion Graphics</h3>
+                <p className="text-[#d92d21] text-sm">2020 - Present</p>
+              </div>
             </div>
-            <h3 className="text-lg font-semibold text-gray-900 mb-2">
-              Unit Converter
-            </h3>
-            <p className="text-sm text-gray-600 mb-4">
-              Convert between length, weight, temperature and currency units.
+            <p className="text-gray-600">
+              Providing logo design, brand identity, and social media content
+              design services for local and international clients.
             </p>
-            <p className="text-sm font-medium text-pink-500">Available Now ✓</p>
+          </div>
+          {/* Experience 5 */}
+          <div className=" p-8 rounded-2xl shadow border border-black/5 hover:shadow-xl transition duration-300">
+            <div className="flex items-center mb-4">
+              <div className="w-12 h-12 flex items-center justify-center bg-[#00acf0] text-white rounded-full mr-4">
+                <PiOfficeChairBold size={18} />
+              </div>
+              <div>
+                <h3 className="text-xl font-semibold">Office Applicaion</h3>
+                <p className="text-[#00acf0] text-sm">2020 - Present</p>
+              </div>
+            </div>
+            <p className="text-gray-600">
+              Providing logo design, brand identity, and social media content
+              design services for local and international clients.
+            </p>
+          </div>
+          {/* Experience 6 */}
+          <div className=" p-8 rounded-2xl shadow border border-black/5 hover:shadow-xl transition duration-300">
+            <div className="flex items-center mb-4">
+              <div className="w-12 h-12 flex items-center justify-center bg-[#f24e29] text-white rounded-full mr-4">
+                <SiStmicroelectronics size={18} />
+              </div>
+              <div>
+                <h3 className="text-xl font-semibold">House Wiring</h3>
+                <p className="text-[#f24e29] text-sm">2020 - Present</p>
+              </div>
+            </div>
+            <p className="text-gray-600">
+              Providing logo design, brand identity, and social media content
+              design services for local and international clients.
+            </p>
           </div>
         </div>
       </div>

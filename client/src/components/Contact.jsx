@@ -3,17 +3,17 @@ import { FiMail, FiPhone, FiGithub, FiLinkedin } from "react-icons/fi";
 
 const Contact = () => {
   return (
-    <section className="max-w-5xl mx-auto px-4 md:px-0 py-12 mt-14">
+    <section className="max-w-5xl mx-auto px-4 md:px-0 py-12 mt-20">
       {/* Heading */}
-      <h2 className="text-3xl font-bold text-center text-gray-900 mb-2">
-        Contact Me
+      <h2 className="text-4xl font-bold  text-gray-900 mb-2">
+        Contact Me____
       </h2>
-      <p className="text-center text-gray-500 mb-12">
+      <p className=" text-gray-500 mb-12">
         I’m open to opportunities and collaborations. Feel free to reach out!
       </p>
 
       {/* Contact Info */}
-      <div className="flex flex-col sm:flex-row justify-center items-center gap-6 mb-12">
+      <div className="flex flex-wrap sm:flex-row items-center gap-6 mb-12">
         <a
           href="mailto:yourmail@example.com"
           className="flex items-center gap-3 px-6 py-3 bg-white border border-gray-200 rounded-2xl shadow-sm hover:shadow-md transition"
